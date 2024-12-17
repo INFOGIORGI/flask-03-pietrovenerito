@@ -18,7 +18,7 @@
     {%for prodotto in prodotti%}
     <tr>
         <td>{{prodotto[0]}}</td>
-        <td><a href="">{{prodotto[1]}}</a></td>
+        <td><a href="{{url_for('scaffale',numscaffale=prodotto[1])}}">{{prodotto[1]}}</a></td>
         <td>{{prodotto[2]}}</td>
     </tr>
     {%endfor%}
